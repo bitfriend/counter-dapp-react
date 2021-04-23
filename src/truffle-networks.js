@@ -14,7 +14,8 @@ module.exports = {
   },
   ropsten: {
     provider: () => new HDWalletProvider(MNEMONIC, ROPSTEN_URL),
-    network_id: 3
+    network_id: 3,
+    gas: 3000000 // ropsten has a lower block limit than mainnet
   },
   kovan: {
     provider: () => new HDWalletProvider(MNEMONIC, KOVAN_URL),

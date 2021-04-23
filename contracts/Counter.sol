@@ -3,11 +3,11 @@ pragma solidity ^0.8.0;
 contract Counter {
   mapping(address => uint256) private counts;
 
-  function increments() public {
+  function increment() public {
     counts[msg.sender] += 1;
   }
 
-  function decrements() public {
+  function decrement() public {
     counts[msg.sender] -= 1;
   }
 
